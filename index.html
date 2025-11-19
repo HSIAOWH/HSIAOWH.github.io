@@ -18,7 +18,6 @@
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="sideNav">
             <a class="navbar-brand js-scroll-trigger" href="#page-top">
-                <!-- span class="d-block d-lg-none">蕭文欣 Wen Hsin Hsiao</span-->
                 <div class="d-none d-lg-block">
                     <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile.jpg" alt="蕭文欣" />
                     <div class="profile-name">
@@ -33,11 +32,12 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Skills</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">Projects / Portfolios</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Awards</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#certifications">Certifications</a></li>
                 </ul>
             </div>
         </nav>
@@ -52,10 +52,10 @@
                         <span class="text-primary">HSIAO </span>
                     </h1>
                     <div class="subheading mb-5">
-                        +886-9-09779368
-                        <a href="mailto:carol.hsiaowh@gmail.com">
-                            carol.hsiaowh@gmail.com
-                        </a>
+                        TEL: +886-9-09779368 | New Taipei City, Taiwan
+                    </div>
+                    <div class="subheading mb-5">
+                        EMAIL:  <a href="mailto:your.email@example.com">your.email@example.com</a>
                     </div>
                     <p class="lead mb-5">I specialize in integrating advanced AI solutions with strategic business insights to drive innovation and sustainable growth. By combining cutting-edge technologies such as Retrieval-Augmented Generation and multimodal dialogue systems with agile development practices, I empower organizations to unlock enterprise knowledge and elevate decision-making. My work bridges the gap between technical implementation and strategic impact, fostering collaboration across teams and maximizing long-term value creation.</p>
                     <div class="social-icons">
@@ -65,12 +65,166 @@
                 </div>
             </section>
 
-            <!-- Interests-->
+            <!-- Skills & Competencies-->
             <section class="resume-section" id="interests">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">Interests</h2>
-                    <p>Apart from being a Master Student, I enjoy spending my time immersed in pop culture. I'm a fan of K-pop, and I love watching story-driven films that leave a lasting impression. Listening to podcasts is one of my favorite ways to relax and learn something new at the same time.</p>
-                    <p class="mb-0">When I'm not exploring new media, I find joy in quieter activities like solving jigsaw puzzles. It's a great way for me to unwind and stay focused. Whether it's through music, movies, or mindfulness, I always enjoy finding new ways to stay inspired and engaged.</p>
+                    <h2 class="mb-5">Skills & Competencies</h2>
+                    
+                    <!-- Language Proficiency -->
+                    <h3 class="skill-category-title">Language Proficiency</h3>
+                    <div class="skills-grid">
+                        <div class="skill-card" onclick="openModal('skillModal1')">
+                            <div class="skill-icon">
+                                <i class="fas fa-language"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>English</h4>
+                                <div class="skill-level">
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" style="width: 85%"></div>
+                                    </div>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                                <p class="skill-label">Advanced</p>
+                            </div>
+                        </div>
+
+                        <div class="skill-card" onclick="openModal('skillModal2')">
+                            <div class="skill-icon">
+                                <i class="fas fa-language"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>Mandarin Chinese</h4>
+                                <div class="skill-level">
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" style="width: 100%"></div>
+                                    </div>
+                                    <span class="skill-percentage">Native</span>
+                                </div>
+                                <p class="skill-label">Mother Tongue</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Technical Skills -->
+                    <h3 class="skill-category-title">Technical Skills</h3>
+                    <div class="skills-grid">
+                        <div class="skill-card" onclick="openModal('skillModal3')">
+                            <div class="skill-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>AI & Machine Learning</h4>
+                                <div class="skill-level">
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" style="width: 90%"></div>
+                                    </div>
+                                    <span class="skill-percentage">90%</span>
+                                </div>
+                                <p class="skill-label">Expert</p>
+                            </div>
+                        </div>
+
+                        <div class="skill-card" onclick="openModal('skillModal4')">
+                            <div class="skill-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>Programming</h4>
+                                <div class="skill-level">
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" style="width: 85%"></div>
+                                    </div>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                                <p class="skill-label">Advanced</p>
+                            </div>
+                        </div>
+
+                        <div class="skill-card" onclick="openModal('skillModal5')">
+                            <div class="skill-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>Data Analysis</h4>
+                                <div class="skill-level">
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" style="width: 80%"></div>
+                                    </div>
+                                    <span class="skill-percentage">80%</span>
+                                </div>
+                                <p class="skill-label">Advanced</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Soft Skills -->
+                    <h3 class="skill-category-title">Soft Skills</h3>
+                    <div class="skills-grid">
+                        <div class="skill-card" onclick="openModal('skillModal6')">
+                            <div class="skill-icon">
+                                <i class="fas fa-search"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>Research & Analysis</h4>
+                                <div class="skill-level">
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" style="width: 88%"></div>
+                                    </div>
+                                    <span class="skill-percentage">88%</span>
+                                </div>
+                                <p class="skill-label">Expert</p>
+                            </div>
+                        </div>
+
+                        <div class="skill-card" onclick="openModal('skillModal7')">
+                            <div class="skill-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>Team Collaboration</h4>
+                                <div class="skill-level">
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" style="width: 85%"></div>
+                                    </div>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                                <p class="skill-label">Advanced</p>
+                            </div>
+                        </div>
+
+                        <div class="skill-card" onclick="openModal('skillModal8')">
+                            <div class="skill-icon">
+                                <i class="fas fa-lightbulb"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>Problem Solving</h4>
+                                <div class="skill-level">
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" style="width: 90%"></div>
+                                    </div>
+                                    <span class="skill-percentage">90%</span>
+                                </div>
+                                <p class="skill-label">Expert</p>
+                            </div>
+                        </div>
+
+                        <div class="skill-card" onclick="openModal('skillModal9')">
+                            <div class="skill-icon">
+                                <i class="fas fa-presentation"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>Presentation</h4>
+                                <div class="skill-level">
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" style="width: 82%"></div>
+                                    </div>
+                                    <span class="skill-percentage">82%</span>
+                                </div>
+                                <p class="skill-label">Advanced</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
 
@@ -79,36 +233,73 @@
                 <div class="resume-section-content">
                     <h2 class="mb-5">Experience</h2>
                     
-                    <div class="experience-card">
-                        <div class="d-flex flex-column flex-md-row justify-content-between">
-                            <div class="flex-grow-1">
-                                <h3 class="mb-0">Research Assistant</h3>
-                                <div class="subheading mb-3">@ National Taipei University</div>
-                                <p>Project: Metaverse AI Multimodal Cross-Language Task-Oriented Dialogue System</p>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="experience-card">
+                            <div class="d-flex flex-column flex-md-row justify-content-between">
+                                <div class="flex-grow-1">
+                                    <h3 class="mb-0">EMI Course Teaching Assistant</h3>
+                                    <div class="subheading mb-3">@ National Taipei University</div>
+                                    <p>Course Name: Sustainability and ESG Data Analytics(M5265)</p>
+                                </div>
+                                <div class="flex-shrink-0"><span class="text-primary">September 2025 - Present</span></div>
                             </div>
-                            <div class="flex-shrink-0"><span class="text-primary">September 2024 - Present</span></div>
                         </div>
                     </div>
 
-                    <div class="experience-card">
-                        <div class="d-flex flex-column flex-md-row justify-content-between">
-                            <div class="flex-grow-1">
-                                <h3 class="mb-0">EMI Course Teaching Assistant</h3>
-                                <div class="subheading mb-3">@ National Taipei University</div>
-                                <p>Course Name: Generative AI Innovative Applications</p>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="experience-card">
+                            <div class="d-flex flex-column flex-md-row justify-content-between">
+                                <div class="flex-grow-1">
+                                    <h3 class="mb-0">Research Assistant</h3>
+                                    <div class="subheading mb-3">@ National Taipei University</div>
+                                    <p>Project: Multimodal Cross-lingual Task-Oriented Dialogue System for Inclusive Communication Support</p>
+                                </div>
+                                <div class="flex-shrink-0"><span class="text-primary">September 2024 - Present</span></div>
                             </div>
-                            <div class="flex-shrink-0"><span class="text-primary">February 2025 - Present</span></div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="experience-card">
+                            <div class="d-flex flex-column flex-md-row justify-content-between">
+                                <div class="flex-grow-1">
+                                    <h3 class="mb-0">Research Assistant</h3>
+                                    <div class="subheading mb-3">@ National Taipei University</div>
+                                    <p>Project: Metaverse AI Multimodal Cross-Language Task-Oriented Dialogue System</p>
+                                </div>
+                                <div class="flex-shrink-0"><span class="text-primary">September 2024 - June 2025</span></div>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="experience-card">
-                        <div class="d-flex flex-column flex-md-row justify-content-between">
-                            <div class="flex-grow-1">
-                                <h3 class="mb-0">EMI Course Teaching Assistant</h3>
-                                <div class="subheading mb-3">@ National Taipei University</div>
-                                <p>Course Name: Artificial Intelligence</p>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="experience-card">
+                            <div class="d-flex flex-column flex-md-row justify-content-between">
+                                <div class="flex-grow-1">
+                                    <h3 class="mb-0">EMI Course Teaching Assistant</h3>
+                                    <div class="subheading mb-3">@ National Taipei University</div>
+                                    <p>Course Name: Generative AI Innovative Applications</p>
+                                </div>
+                                <div class="flex-shrink-0"><span class="text-primary">February 2025 - Present</span></div>
                             </div>
-                            <div class="flex-shrink-0"><span class="text-primary">September 2024 - December 2024</span></div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="experience-card">
+                            <div class="d-flex flex-column flex-md-row justify-content-between">
+                                <div class="flex-grow-1">
+                                    <h3 class="mb-0">EMI Course Teaching Assistant</h3>
+                                    <div class="subheading mb-3">@ National Taipei University</div>
+                                    <p>Course Name: Artificial Intelligence</p>
+                                </div>
+                                <div class="flex-shrink-0"><span class="text-primary">September 2024 - December 2024</span></div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -119,47 +310,217 @@
                 <div class="resume-section-content">
                     <h2 class="mb-5">Education</h2>
                     
-                    <div class="experience-card">
-                        <div class="d-flex flex-column flex-md-row justify-content-between">
-                            <div class="flex-grow-1">
-                                <h3 class="mb-0">National Taipei University</h3>
-                                <div class="subheading mb-3">Master of Business Administration - MBA</div>
-                                <div>Graduate Institute of Information Management</div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="experience-card">
+                            <div class="d-flex flex-column flex-md-row justify-content-between">
+                                <div class="flex-grow-1">
+                                    <h3 class="mb-0">National Taipei University</h3>
+                                    <div>Graduate Institute of Information Management</div>
+                                </div>
+                                <div class="flex-shrink-0"><span class="text-primary">September 2024 - Now</span></div>
                             </div>
-                            <div class="flex-shrink-0"><span class="text-primary">September 2024 - Present</span></div>
                         </div>
                     </div>
 
-                    <div class="experience-card">
-                        <div class="d-flex flex-column flex-md-row justify-content-between">
-                            <div class="flex-grow-1">
-                                <h3 class="mb-0">Fu Jen Catholic University</h3>
-                                <div class="subheading mb-3">Bachelor</div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="experience-card">
+                            <div class="d-flex flex-column flex-md-row justify-content-between">
+                                <div class="flex-grow-1">
+                                    <h3 class="mb-0">Fu Jen Catholic University</h3>
+                                    <div class="subheading mb-3">Bachelor</div>
+                                </div>
+                                <div class="flex-shrink-0"><span class="text-primary">September 2024 - December 2024</span></div>
                             </div>
-                            <div class="flex-shrink-0"><span class="text-primary">September 2020 - June 2024</span></div>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <!-- Skills-->
-            <section class="resume-section" id="skills">
+
+            <!-- Projects / Portfolio-->
+            <section class="resume-section" id="projects">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">Skills</h2>
-                    <div class="subheading mb-3">Programming Languages & Tools</div>
-                    <ul class="list-inline dev-icons">
-                        <li class="list-inline-item"><i class="fa-brands fa-python"></i></li>
-                        <li class="list-inline-item"><i class="fas fa-brain"></i></li>
-                        <li class="list-inline-item"><i class="fas fa-database"></i></li>
-                        <li class="list-inline-item"><i class="fas fa-chart-line"></i></li>
-                    </ul>
+                    <h2 class="mb-5">Projects / Portfolio</h2>
+                    
+                    <div class="awards-grid">
+                        <div class="award-card" onclick="openModal('projectModal1')">
+                            <div class="award-image">
+                                <img src="assets/img/atec.png" alt="Metaverse AI Dialogue System" style="max-width: 100%; border-radius: 8px; margin-bottom: 20px;" />
+                                
+                            </div>
+                            <div class="award-content">
+                                <div class="award-title">Metaverse AI Multimodal Cross-Language Task-Oriented Dialogue System</div>
+                                <div class="award-description">Advanced cross-language task-oriented dialogue system integrating AI technologies for metaverse applications with real-time multimodal interaction capabilities.</div>
+                            </div>
+                        </div>
+
+                        <div class="award-card" onclick="openModal('projectModal2')">
+                            <div class="award-image">
+                                <i class="fas fa-database" style="font-size: 4rem; color: white;"></i>
+                            </div>
+                            <div class="award-content">
+                                <div class="award-title">Multimodal Cross-lingual Task-Oriented Dialogue System for Inclusive Communication Support</div>
+                                <div class="award-description"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="award-card" onclick="openModal('projectModal3')">
+                            <div class="award-image">
+                                <i class="fas fa-database" style="font-size: 4rem; color: white;"></i>
+                            </div>
+                            <div class="award-content">
+                                <div class="award-title">AI Teaching Assistant for Consumer Behavior</div>
+                                <div class="award-description"></div>
+                            </div>
+                        </div>
+
+                        <div class="award-card" onclick="openModal('projectModal4')">
+                            <div class="award-image">
+                                <i class="fas fa-database" style="font-size: 4rem; color: white;"></i>
+                            </div>
+                            <div class="award-content">
+                                <div class="award-title">Competition Matchmaking App - MachiPower</div>
+                                <div class="award-description"></div>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
             </section>
 
-            <!-- Awards-->
+            <!-- Project Modals -->
+            <div id="projectModal1" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3>Metaverse AI Multimodal Dialogue System</h3>
+                        <span class="close" onclick="closeModal('projectModal1')">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-image">
+                             <img src="assets/img/atec.png" alt="Metaverse AI Dialogue System" style="max-width: 100%; border-radius: 8px; margin-bottom: 20px;" />
+                        </div>
+                        <h4>Advanced Cross-Language AI Communication</h4>
+                        <p>Key features and technologies:</p>
+                        <ul>
+                            <li>Real-time multimodal interaction processing</li>
+                            <li>Cross-language natural language understanding</li>
+                            <li>Task-oriented dialogue management</li>
+                            <li>Metaverse environment integration</li>
+                            <li>Advanced AI model optimization</li>
+                        </ul>
+                        <p>This project demonstrates cutting-edge research in AI communication systems, focusing on seamless human-AI interaction in virtual environments with multilingual support.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="projectModal2" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3>RAG-based Enterprise Knowledge System</h3>
+                        <span class="close" onclick="closeModal('projectModal2')">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-image">
+                            <i class="fas fa-database" style="font-size: 4rem;"></i>
+                        </div>
+                        <!-- <h4>Intelligent Document Processing & Retrieval</h4>
+                        <p>Core capabilities include:</p>
+                        <ul>
+                            <li>Advanced Retrieval-Augmented Generation implementation</li>
+                            <li>Enterprise document indexing and search</li>
+                            <li>Contextual information extraction</li>
+                            <li>Real-time knowledge base updates</li>
+                            <li>Scalable architecture design</li>
+                        </ul>
+                        <p>Designed to transform how organizations access and utilize their knowledge assets, enabling faster decision-making and improved operational efficiency.</p>
+                    -->
+                    </div>
+                </div>
+            </div>
+
+            <div id="projectModal3" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3>AI-Powered Business Analytics Platform</h3>
+                        <span class="close" onclick="closeModal('projectModal3')">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-image">
+                            <i class="fab fa-python" style="font-size: 4rem;"></i>
+                        </div>
+                        <h4>Machine Learning & Business Intelligence</h4>
+                        <p>Platform components:</p>
+                        <ul>
+                            <li>Advanced machine learning algorithms</li>
+                            <li>Predictive analytics and forecasting</li>
+                            <li>Interactive data visualization</li>
+                            <li>Automated reporting systems</li>
+                            <li>Strategic insights generation</li>
+                        </ul>
+                        <p>Comprehensive solution that bridges the gap between raw data and actionable business insights, driving strategic decision-making and sustainable growth.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="projectModal4" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3>Agile Development Framework</h3>
+                        <span class="close" onclick="closeModal('projectModal4')">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-image">
+                            <i class="fas fa-chart-line" style="font-size: 4rem;"></i>
+                        </div>
+                        <h4>Strategic Implementation & Collaboration</h4>
+                        <p>Framework highlights:</p>
+                        <ul>
+                            <li>Technical solution to business impact alignment</li>
+                            <li>Cross-functional team collaboration tools</li>
+                            <li>Value-driven development practices</li>
+                            <li>Continuous integration and deployment</li>
+                            <li>Performance measurement and optimization</li>
+                        </ul>
+                        <p>A comprehensive framework designed to maximize long-term value creation through strategic technical implementation and enhanced team collaboration.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Awards Section -->
             <section class="resume-section" id="awards">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">Awards & Certifications</h2>
+                    <h2 class="mb-5">Awards</h2>
+                    
+                    <div class="awards-grid">
+                        <div class="award-card" onclick="openModal('modal2')">
+                            <div class="award-image">
+                                <i class="fas fa-trophy" style="font-size: 4rem; color: white;"></i>
+                            </div>
+                            <div class="award-content">
+                                <div class="award-title">2025 臺北大學AI智慧應用創新競賽 AI Innovation Award - TRADIQ.AI 美國關稅智慧查詢系統</div>
+                                <div class="award-description"></div>
+                            </div>
+                        </div>
+
+                        <div class="award-card" onclick="openModal('modal3')">
+                            <div class="award-image">
+                                <i class="fas fa-trophy" style="font-size: 4rem; color: white;"></i>
+                            </div>
+                            <div class="award-content">
+                                <div class="award-title">2025 智慧創新大賞 Best AI Awards - 美國關稅大師</div>
+                                <div class="award-description">入圍決賽</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Certifications Section -->
+            <section class="resume-section" id="certifications">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Certifications</h2>
                     
                     <div class="awards-grid">
                         <div class="award-card" onclick="openModal('modal1')">
@@ -168,18 +529,17 @@
                             </div>
                             <div class="award-content">
                                 <div class="award-title">NVIDIA DLI - Building RAG Agents with LLMs</div>
-                                <div class="award-description">Completed advanced certification in Retrieval-Augmented Generation and Large Language Model implementation for enterprise applications.</div>
+                                <div class="award-description"></div>
                             </div>
                         </div>
 
-                        <!-- 您可以添加更多獎項卡片 -->
-                        <div class="award-card" onclick="openModal('modal2')">
+                        <div class="award-card" onclick="openModal('modal4')">
                             <div class="award-image">
-                                <i class="fas fa-trophy" style="font-size: 4rem; color: white;"></i>
+                                <i class="fas fa-certificate" style="font-size: 4rem; color: white;"></i>
                             </div>
                             <div class="award-content">
-                                <div class="award-title">AI Innovation Award</div>
-                                <div class="award-description">Recognition for outstanding contribution to artificial intelligence research and development projects.</div>
+                                <div class="award-title">TOEIC 855</div>
+                                <div class="award-description"></div>
                             </div>
                         </div>
                     </div>
@@ -217,7 +577,7 @@
                     <h3>AI Innovation Award</h3>
                     <span class="close" onclick="closeModal('modal2')">&times;</span>
                 </div>
-                <div class="modal-body">
+               <!-- <div class="modal-body">
                     <div class="modal-image">
                         <i class="fas fa-trophy" style="font-size: 4rem;"></i>
                     </div>
@@ -230,11 +590,383 @@
                         <li>Academic research excellence</li>
                     </ul>
                     <p>This award acknowledges outstanding performance in advancing the field of artificial intelligence through practical research and implementation.</p>
+                </div>-->
+            </div>
+        </div>
+
+        <div id="modal3" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>2025 智慧創新大賞 Best AI Awards - 美國關稅大師</h3>
+                    <span class="close" onclick="closeModal('modal3')">&times;</span>
+                </div>
+               <!-- <div class="modal-body">
+                    <div class="modal-image">
+                        <i class="fas fa-trophy" style="font-size: 4rem;"></i>
+                    </div>
+                    <h4>Excellence in AI Research</h4>
+                    <p>Recognized for innovative contributions to:</p>
+                    <ul>
+                        <li>Multimodal dialogue system development</li>
+                        <li>Cross-language AI communication protocols</li>
+                        <li>Metaverse AI integration solutions</li>
+                        <li>Academic research excellence</li>
+                    </ul>
+                    <p>This award acknowledges outstanding performance in advancing the field of artificial intelligence through practical research and implementation.</p>
+                </div>-->
+            </div>
+        </div>
+
+        <!-- Skills Modals -->
+        <div id="skillModal1" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>English Proficiency</h3>
+                    <span class="close" onclick="closeModal('skillModal1')">&times;</span>
+                </div>
+                <div class="modal-body">
+                    <div class="skill-detail-header">
+                        <div class="skill-detail-icon">
+                            <i class="fas fa-language"></i>
+                        </div>
+                        <div class="skill-detail-level">
+                            <h4>Advanced Level</h4>
+                            <div class="skill-bar-large">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                            <span class="skill-percentage-large">85%</span>
+                        </div>
+                    </div>
+                    <h4>Certifications & Achievements</h4>
+                    <ul>
+                        <li><strong>TOEIC Score: 855</strong> - Demonstrates strong command of business English</li>
+                        <li>Proficient in academic and professional communication</li>
+                        <li>Experience as EMI (English as Medium of Instruction) Teaching Assistant</li>
+                    </ul>
+                    <h4>Practical Applications</h4>
+                    <ul>
+                        <li>Conducted research presentations in English</li>
+                        <li>Collaborated with international teams on AI projects</li>
+                        <li>Technical documentation and report writing</li>
+                    </ul>
                 </div>
             </div>
         </div>
 
-        <script>
+        <div id="skillModal2" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Mandarin Chinese</h3>
+                    <span class="close" onclick="closeModal('skillModal2')">&times;</span>
+                </div>
+                <div class="modal-body">
+                    <div class="skill-detail-header">
+                        <div class="skill-detail-icon">
+                            <i class="fas fa-language"></i>
+                        </div>
+                        <div class="skill-detail-level">
+                            <h4>Native Speaker</h4>
+                            <div class="skill-bar-large">
+                                <div class="skill-progress" style="width: 100%"></div>
+                            </div>
+                            <span class="skill-percentage-large">Native</span>
+                        </div>
+                    </div>
+                    <h4>Language Capabilities</h4>
+                    <ul>
+                        <li>Native fluency in speaking, reading, and writing</li>
+                        <li>Expertise in both Traditional and Simplified Chinese</li>
+                        <li>Strong command of technical and business terminology</li>
+                    </ul>
+                    <h4>Professional Use</h4>
+                    <ul>
+                        <li>Academic research and publication in Chinese</li>
+                        <li>Business presentations and client communications</li>
+                        <li>Technical documentation translation</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="skillModal3" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>AI & Machine Learning</h3>
+                    <span class="close" onclick="closeModal('skillModal3')">&times;</span>
+                </div>
+                <div class="modal-body">
+                    <div class="skill-detail-header">
+                        <div class="skill-detail-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <div class="skill-detail-level">
+                            <h4>Expert Level</h4>
+                            <div class="skill-bar-large">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                            <span class="skill-percentage-large">90%</span>
+                        </div>
+                    </div>
+                    <h4>Core Competencies</h4>
+                    <ul>
+                        <li><strong>RAG Systems</strong> - Building Retrieval-Augmented Generation agents with LLMs</li>
+                        <li><strong>Multimodal AI</strong> - Cross-language task-oriented dialogue systems</li>
+                        <li><strong>LLM Fine-tuning</strong> - Model optimization and deployment</li>
+                        <li><strong>AI Integration</strong> - Enterprise-grade AI solution architecture</li>
+                    </ul>
+                    <h4>Projects & Experience</h4>
+                    <ul>
+                        <li>Metaverse AI Multimodal Dialogue System development</li>
+                        <li>NVIDIA DLI Certified in Building RAG Agents</li>
+                        <li>AI Innovation Award winner</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="skillModal4" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Programming Skills</h3>
+                    <span class="close" onclick="closeModal('skillModal4')">&times;</span>
+                </div>
+                <div class="modal-body">
+                    <div class="skill-detail-header">
+                        <div class="skill-detail-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="skill-detail-level">
+                            <h4>Advanced Level</h4>
+                            <div class="skill-bar-large">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                            <span class="skill-percentage-large">85%</span>
+                        </div>
+                    </div>
+                    <h4>Programming Languages</h4>
+                    <ul>
+                        <li><strong>Python</strong> - Primary language for AI/ML development</li>
+                        <li><strong>JavaScript</strong> - Frontend and full-stack development</li>
+                        <li><strong>SQL</strong> - Database management and queries</li>
+                    </ul>
+                    <h4>Frameworks & Tools</h4>
+                    <ul>
+                        <li>TensorFlow, PyTorch for deep learning</li>
+                        <li>React for web application development</li>
+                        <li>Git for version control</li>
+                        <li>RESTful API development</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="skillModal5" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Data Analysis</h3>
+                    <span class="close" onclick="closeModal('skillModal5')">&times;</span>
+                </div>
+                <div class="modal-body">
+                    <div class="skill-detail-header">
+                        <div class="skill-detail-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="skill-detail-level">
+                            <h4>Advanced Level</h4>
+                            <div class="skill-bar-large">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                            <span class="skill-percentage-large">80%</span>
+                        </div>
+                    </div>
+                    <h4>Analysis Capabilities</h4>
+                    <ul>
+                        <li>Statistical analysis and hypothesis testing</li>
+                        <li>Data preprocessing and cleaning</li>
+                        <li>Predictive modeling and forecasting</li>
+                        <li>A/B testing and experimental design</li>
+                    </ul>
+                    <h4>Tools & Technologies</h4>
+                    <ul>
+                        <li>Pandas, NumPy for data manipulation</li>
+                        <li>Matplotlib, Seaborn for visualization</li>
+                        <li>Jupyter Notebooks for analysis workflows</li>
+                        <li>Excel and Power BI for business reporting</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="skillModal6" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Research & Analysis</h3>
+                    <span class="close" onclick="closeModal('skillModal6')">&times;</span>
+                </div>
+                <div class="modal-body">
+                    <div class="skill-detail-header">
+                        <div class="skill-detail-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <div class="skill-detail-level">
+                            <h4>Expert Level</h4>
+                            <div class="skill-bar-large">
+                                <div class="skill-progress" style="width: 88%"></div>
+                            </div>
+                            <span class="skill-percentage-large">88%</span>
+                        </div>
+                    </div>
+                    <h4>Research Expertise</h4>
+                    <ul>
+                        <li>Academic research methodology</li>
+                        <li>Literature review and synthesis</li>
+                        <li>Experimental design and execution</li>
+                        <li>Critical thinking and evaluation</li>
+                    </ul>
+                    <h4>Experience</h4>
+                    <ul>
+                        <li>Research Assistant at National Taipei University</li>
+                        <li>Published research in AI and multimodal systems</li>
+                        <li>Conducted industry analysis for business insights</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="skillModal7" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Team Collaboration</h3>
+                    <span class="close" onclick="closeModal('skillModal7')">&times;</span>
+                </div>
+                <div class="modal-body">
+                    <div class="skill-detail-header">
+                        <div class="skill-detail-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="skill-detail-level">
+                            <h4>Advanced Level</h4>
+                            <div class="skill-bar-large">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                            <span class="skill-percentage-large">85%</span>
+                        </div>
+                    </div>
+                    <h4>Collaboration Skills</h4>
+                    <ul>
+                        <li>Cross-functional team coordination</li>
+                        <li>Effective communication across technical and non-technical stakeholders</li>
+                        <li>Agile development practices</li>
+                        <li>Conflict resolution and consensus building</li>
+                    </ul>
+                    <h4>Experience</h4>
+                    <ul>
+                        <li>Teaching Assistant for multiple courses</li>
+                        <li>Collaborated on AI research projects</li>
+                        <li>Worked with international teams</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="skillModal8" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Problem Solving</h3>
+                    <span class="close" onclick="closeModal('skillModal8')">&times;</span>
+                </div>
+                <div class="modal-body">
+                    <div class="skill-detail-header">
+                        <div class="skill-detail-icon">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <div class="skill-detail-level">
+                            <h4>Expert Level</h4>
+                            <div class="skill-bar-large">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                            <span class="skill-percentage-large">90%</span>
+                        </div>
+                    </div>
+                    <h4>Problem-Solving Approach</h4>
+                    <ul>
+                        <li>Analytical thinking and root cause analysis</li>
+                        <li>Creative solution development</li>
+                        <li>Data-driven decision making</li>
+                        <li>Systematic troubleshooting</li>
+                    </ul>
+                    <h4>Applications</h4>
+                    <ul>
+                        <li>AI system optimization and debugging</li>
+                        <li>Business process improvement</li>
+                        <li>Technical challenge resolution</li>
+                        <li>Innovation in AI applications</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="skillModal9" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Presentation Skills</h3>
+                    <span class="close" onclick="closeModal('skillModal9')">&times;</span>
+                </div>
+                <div class="modal-body">
+                    <div class="skill-detail-header">
+                        <div class="skill-detail-icon">
+                            <i class="fas fa-presentation"></i>
+                        </div>
+                        <div class="skill-detail-level">
+                            <h4>Advanced Level</h4>
+                            <div class="skill-bar-large">
+                                <div class="skill-progress" style="width: 82%"></div>
+                            </div>
+                            <span class="skill-percentage-large">82%</span>
+                        </div>
+                    </div>
+                    <h4>Presentation Capabilities</h4>
+                    <ul>
+                        <li>Clear and engaging communication</li>
+                        <li>Visual storytelling with data</li>
+                        <li>Audience adaptation and engagement</li>
+                        <li>Technical concept simplification</li>
+                    </ul>
+                    <h4>Experience</h4>
+                    <ul>
+                        <li>Research presentations at academic conferences</li>
+                        <li>Teaching assistant delivering course content</li>
+                        <li>Project demonstrations to stakeholders</li>
+                        <li>Competition pitches and award presentations</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="modal4" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>TOEIC </h3>
+                    <span class="close" onclick="closeModal('modal4')">&times;</span>
+                </div>
+               <!-- <div class="modal-body">
+                    <div class="modal-image">
+                        <i class="fas fa-trophy" style="font-size: 4rem;"></i>
+                    </div>
+                    <h4>Excellence in AI Research</h4>
+                    <p>Recognized for innovative contributions to:</p>
+                    <ul>
+                        <li>Multimodal dialogue system development</li>
+                        <li>Cross-language AI communication protocols</li>
+                        <li>Metaverse AI integration solutions</li>
+                        <li>Academic research excellence</li>
+                    </ul>
+                    <p>This award acknowledges outstanding performance in advancing the field of artificial intelligence through practical research and implementation.</p>
+                </div>-->
+            </div>
+        </div>
+
+        <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
             // Modal functionality
             function openModal(modalId) {
                 const modal = document.getElementById(modalId);
@@ -298,9 +1030,3 @@
                 section.style.transition = 'all 0.6s ease';
                 observer.observe(section);
             });
-        </script>
-
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    </body>
-</html>
