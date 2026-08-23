@@ -8,7 +8,7 @@
     --text-light: #95A5A6;
     --white: #ffffff;
     --bg-light: #F5F7F9;
-    --bg-lighter: #FAFBFC;
+    --bg-lighter: #d4e5f7;
     --border-color: #E8EDF2;
     --shadow-sm: 0 2px 8px rgba(91, 124, 153, 0.08);
     --shadow-md: 0 4px 16px rgba(91, 124, 153, 0.12);
@@ -23,8 +23,8 @@
 }
 
 body {
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    line-height: 1.6;
+    font-family: 'Inter', 'Noto Sans TC', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang TC', 'Microsoft JhengHei', Roboto, sans-serif;
+    line-height: 1.75;
     color: var(--text-dark);
     background: var(--bg-lighter);
     min-height: 100vh;
@@ -542,20 +542,23 @@ h1, h2, h3 {
 
 .award-image {
     width: 100%;
-    height: 180px;
+    height: 200px;
     background: var(--gradient);
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
     overflow: hidden;
+    border-radius: 12px 12px 0 0;
 }
 
 .award-image img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
+    object-position: center;
     transition: transform 0.3s ease;
+    background: white;
 }
 
 .award-card:hover .award-image img {
@@ -601,6 +604,8 @@ h1, h2, h3 {
     height: 100%;
     background-color: rgba(0,0,0,0.5);
     backdrop-filter: blur(4px);
+    overflow-y: auto;
+    padding: 20px 0;
 }
 
 .modal-content {
@@ -610,11 +615,14 @@ h1, h2, h3 {
     border-radius: 12px;
     width: 90%;
     max-width: 600px;
-    overflow: hidden;
+    overflow: visible;
     transform: scale(0.9);
     opacity: 0;
     transition: all 0.3s ease;
     box-shadow: var(--shadow-lg);
+    max-height: 90vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .modal.show .modal-content {
@@ -658,6 +666,9 @@ h1, h2, h3 {
 
 .modal-body {
     padding: 2rem;
+    overflow-y: auto;
+    flex: 1;
+    max-height: calc(90vh - 80px);
 }
 
 .modal-image {
@@ -755,4 +766,310 @@ a, button, .nav-link, .award-card, .social-icon {
 a:focus, button:focus, .nav-link:focus {
     outline: 2px solid var(--primary-color);
     outline-offset: 2px;
+}
+
+/* ==========================================================
+   中文版新增樣式 (Chinese resume layout additions)
+   ========================================================== */
+
+/* --- About --- */
+.about-tagline {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    letter-spacing: 0.5px;
+    margin-bottom: 1.25rem;
+}
+
+.about-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.75rem;
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1.75rem 0;
+    font-size: 0.95rem;
+    color: var(--text-medium);
+}
+
+.about-meta li {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    list-style: none;
+}
+
+.about-meta i {
+    color: var(--primary-color);
+    width: 1.1em;
+    text-align: center;
+}
+
+.about-meta a {
+    color: var(--text-medium);
+    text-decoration: none;
+    border-bottom: 1px dotted var(--accent-color);
+}
+
+.about-meta a:hover {
+    color: var(--primary-color);
+}
+
+#about .lead {
+    margin-bottom: 1rem;
+}
+
+#about .lead strong {
+    color: var(--text-dark);
+    font-weight: 600;
+}
+
+/* --- Highlight stats --- */
+.highlight-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    gap: 1rem;
+    margin: 2rem 0 1.75rem;
+}
+
+.highlight-card {
+    background: var(--bg-light);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 1.4rem 1.25rem;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.highlight-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--primary-color);
+    background: var(--white);
+}
+
+.highlight-num {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 2.3rem;
+    font-weight: 700;
+    line-height: 1.1;
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 0.5rem;
+}
+
+.highlight-label {
+    font-size: 0.85rem;
+    line-height: 1.5;
+    color: var(--text-medium);
+}
+
+/* --- Experience / Education cards --- */
+.exp-head {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 0.5rem 1.5rem;
+    margin-bottom: 0.85rem;
+}
+
+.exp-title-block {
+    flex: 1 1 320px;
+    min-width: 0;
+}
+
+.exp-title-block h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.35rem;
+    line-height: 1.45;
+}
+
+.exp-title-block .subheading {
+    color: var(--primary-color);
+    font-size: 0.98rem;
+    margin-bottom: 0;
+}
+
+.exp-date {
+    flex: 0 0 auto;
+    text-align: right;
+    line-height: 1.5;
+}
+
+.exp-date span {
+    display: block;
+    font-weight: 600;
+    font-size: 0.92rem;
+    white-space: nowrap;
+}
+
+.exp-date small {
+    display: block;
+    color: var(--text-light);
+    font-size: 0.8rem;
+}
+
+.exp-note {
+    font-size: 0.92rem;
+    color: var(--text-dark);
+    background: rgba(91, 124, 153, 0.08);
+    border-radius: 6px;
+    padding: 0.55rem 0.85rem;
+    margin-bottom: 0.85rem;
+}
+
+.exp-note i {
+    color: var(--primary-color);
+    margin-right: 0.35rem;
+}
+
+.exp-summary {
+    font-size: 0.95rem;
+    color: var(--text-medium);
+    margin-bottom: 0.75rem;
+}
+
+.exp-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1rem 0;
+}
+
+.exp-list li {
+    position: relative;
+    padding-left: 1.4rem;
+    margin-bottom: 0.55rem;
+    font-size: 0.94rem;
+    color: var(--text-medium);
+    line-height: 1.75;
+}
+
+.exp-list li::before {
+    content: '';
+    position: absolute;
+    left: 0.2rem;
+    top: 0.72em;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--secondary-color);
+}
+
+/* --- Tag chips --- */
+.tag-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 0.9rem;
+}
+
+.tag-list-lead {
+    padding: 1.1rem 1.35rem;
+    background: var(--bg-light);
+    border-radius: 10px;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.tag-list-title {
+    font-weight: 600;
+    color: var(--text-dark);
+    font-size: 0.9rem;
+    margin-right: 0.35rem;
+}
+
+.tag {
+    display: inline-block;
+    padding: 0.28rem 0.7rem;
+    font-size: 0.8rem;
+    color: var(--primary-color);
+    background: var(--white);
+    border: 1px solid var(--accent-color);
+    border-radius: 999px;
+    white-space: nowrap;
+    transition: all 0.25s ease;
+}
+
+.tag:hover {
+    background: var(--gradient);
+    color: var(--white);
+    border-color: transparent;
+}
+
+/* --- Project / Award cards --- */
+.award-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.award-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.award-role {
+    margin-top: auto;
+    padding-top: 0.7rem;
+    border-top: 1px dashed var(--border-color);
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+/* --- Skills --- */
+.skill-card {
+    align-items: flex-start;
+}
+
+.skill-info h4 {
+    margin-bottom: 0.4rem;
+}
+
+.skill-label {
+    font-size: 0.86rem;
+    line-height: 1.6;
+    color: var(--text-medium);
+}
+
+.skill-detail-sub {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--primary-color);
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* --- Modals --- */
+.modal-body strong {
+    color: var(--text-dark);
+}
+
+.modal-body .tag-list {
+    margin-top: 1.25rem;
+}
+
+.modal-body .tag {
+    background: var(--bg-light);
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+    .exp-date {
+        text-align: left;
+    }
+
+    .highlight-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about-meta {
+        gap: 0.4rem 1.25rem;
+        font-size: 0.9rem;
+    }
+
 }
