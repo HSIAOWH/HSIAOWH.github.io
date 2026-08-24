@@ -1049,6 +1049,28 @@ a:focus, button:focus, .nav-link:focus {
     color: var(--text-dark);
 }
 
+.project-link-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.6rem 1.25rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    background: var(--gradient);
+    color: white;
+    font-weight: 600;
+    font-size: 0.9rem;
+    border-radius: 999px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.project-link-btn:hover {
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
 .modal-body .tag-list {
     margin-top: 1.25rem;
 }
