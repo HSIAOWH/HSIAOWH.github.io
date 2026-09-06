@@ -1095,3 +1095,55 @@ a:focus, button:focus, .nav-link:focus {
     }
 
 }
+
+/* --- Language switch --- */
+.lang-switch {
+    position: fixed;
+    top: 1.25rem;
+    right: 1.5rem;
+    z-index: 1500;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.15rem;
+    padding: 0.25rem;
+    background: var(--white);
+    border: 1px solid var(--border-color);
+    border-radius: 999px;
+    box-shadow: var(--shadow-md);
+}
+
+.lang-opt {
+    display: inline-block;
+    padding: 0.35rem 0.9rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    line-height: 1;
+    color: var(--text-medium);
+    text-decoration: none;
+    border-radius: 999px;
+    white-space: nowrap;
+    transition: all 0.25s ease;
+}
+
+.lang-opt.active {
+    background: var(--gradient);
+    color: var(--white);
+}
+
+a.lang-opt:hover {
+    color: var(--primary-color);
+    background: var(--bg-light);
+}
+
+a.lang-opt.active:hover {
+    color: var(--white);
+    background: var(--gradient);
+}
+
+@media (max-width: 768px) {
+    .lang-switch {
+        top: auto;
+        bottom: 1rem;
+        right: 1rem;
+    }
+}
